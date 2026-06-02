@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="Native Android POS for Indian restaurants with first year free launch offer, offline-first billing, AI OCR menu import, split payments, and reports.">
+<meta property="og:title" content="KhanaBook - Professional Android POS System">
+<meta property="og:description" content="Native Android POS for Indian restaurants with first year free launch offer, offline-first billing, AI OCR menu import, split payments, and reports.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="../assets/khanabook_logo.png">
+<meta property="og:image" content="../assets/khanabook_logo.png">
+<title>KhanaBook - Professional Android POS System</title>
+<link rel="icon" type="image/png" href="../assets/khanabook_logo_header.png">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/android-pos.css">
+<link rel="stylesheet" href="../css/khanabook-premium.css">
+      
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "KhanaBook",
+  "description": "Precision POS for the Modern Era",
+  "url": "https://khanabook.com",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-94716-76935",
+    "email": "kbook@pcts.tech",
+    "contactType": "sales"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "KhanaBook",
+  "url": "https://khanabook.com"
+}
+</script>
+<style>
+    .pos-frame {
+        background: #1e2023;
+        border: 8px solid #333538;
+        border-radius: 2rem;
+    }
+    .scroll-reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+    }
+    .scroll-reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  </style>
+  <link rel="canonical" href="https://khanabook.com/android-pos.html">
+  <meta property="og:url" content="https://khanabook.com/android-pos.html">
+  <meta name="robots" content="index, follow">
+  <!-- Theme initializer: inline & synchronous to prevent flash of wrong theme -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('khana-theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body class="bg-background text-on-surface font-body-base overflow-x-hidden">
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 h-16">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+<a href="home.html" class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary">
+<img src="../assets/khanabook_logo.png" alt="KhanaBook" class="h-8 w-auto shrink-0">
+KhanaBook</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors" href="features.html">Features</a>
+<a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors" href="pricing-plans.html">Pricing</a>
+<a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors" href="our-story.html">About Us</a>
+<a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors" href="help-center.html">Help Center</a>
+<a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors" href="get-started.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center border border-outline-variant/50 hover:border-primary transition-colors bg-surface-container/50" aria-label="Toggle theme">
+<span class="material-symbols-outlined text-lg text-on-surface-variant" id="theme-icon">light_mode</span>
+</button>
+<a href="get-started.html" class="nav-cta hidden md:inline-block">Get First Year Free</a>
+<button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden w-9 h-9 rounded-full flex items-center justify-center border border-outline-variant/50 hover:border-primary transition-colors bg-surface-container/50 text-on-surface-variant" aria-label="Toggle navigation menu">
+          <span class="material-symbols-outlined text-lg" id="mobile-menu-icon">menu</span>
+        </button>
+</div>
+</div>
+</nav>
+<div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-surface/95 backdrop-blur-md border-b border-outline-variant/30 z-40 py-4 px-6 flex flex-col gap-1 shadow-lg md:hidden">
+    <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="home.html">Home</a>
+    <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="features.html">Features</a>
+    <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="pos-hardware.html">POS Systems</a>
+    <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="pricing-plans.html">Pricing</a>
+    <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="our-story.html">About Us</a>
+    <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="help-center.html">Help Center</a>
+    <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="get-started.html">Contact</a>
+    <a href="get-started.html" class="mobile-cta mt-2">Get First Year Free</a>
+  </div>
+<!-- Hero Section -->
+<section class="relative pt-[160px] pb-section-desktop px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-xl items-center scroll-reveal active">
+<div class="hero-gradient absolute inset-0 -z-10"
+style="background: radial-gradient(circle at 70% 40%, rgba(124, 58, 237, 0.12) 0%, transparent 70%);">
+</div>
+<div class="md:col-span-7 z-10">
+<span class="inline-block px-md py-xs bg-primary-container/10 border border-primary-container/20 text-primary rounded-full font-label-caps text-label-caps mb-md">
+                MODERN ANDROID POS SYSTEM
+            </span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-lg text-on-surface">
+                Revolutionize Your <br>
+<span class="text-primary">Restaurant Billing.</span>
+</h1>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-[540px] mb-xl">
+                Experience the power of an offline-first, high-performance Android POS. Built with modern technology for merchants who demand speed, reliability, and precision.
+            </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<a href="get-started.html" class="h-[48px] px-xl bg-primary-container text-on-primary-fixed font-body-bold rounded-lg hover:scale-105 transition-all violet-glow flex items-center justify-center">
+                    Get First Year Free
+                </a>
+<a href="get-started.html" class="h-[48px] px-xl border border-outline-variant/30 text-on-surface font-body-bold rounded-lg hover:bg-surface-container transition-all flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+                    Watch Demo
+                </a>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="pos-frame relative z-10 shadow-2xl rotate-3 transform hover:rotate-0 transition-transform duration-700">
+<img class="rounded-xl w-full" alt="A premium Android point-of-sale terminal showing a modern restaurant billing interface with vibrant saffron accents and a clean dark layout. The hardware is a sleek matte slate gray device with soft rounded corners, positioned on a minimalist wooden counter with soft bokeh lighting in a high-end restaurant setting. The mood is professional, sophisticated, and technologically advanced." src="../assets/pos_terminal_industrial.png" loading="lazy" decoding="async">
+</div>
+<!-- Decorative Glows -->
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary-container/20 blur-[100px] rounded-full"></div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="py-xl bg-surface-container-low border-y border-outline-variant/20 scroll-reveal active">
+<div class="max-w-7xl mx-auto px-margin-desktop flex flex-wrap justify-center md:justify-between items-center gap-xl opacity-60 grayscale hover:grayscale-0 transition-all">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest w-full text-center md:w-auto mb-md md:mb-0">Trusted Integrations</span>
+<div class="flex gap-xl flex-wrap justify-center">
+<div class="h-8 w-24 bg-surface-container-highest rounded flex items-center justify-center font-bold text-on-surface">Easebuzz</div>
+<div class="h-8 w-24 bg-surface-container-highest rounded flex items-center justify-center font-bold text-on-surface">Swiggy</div>
+<div class="h-8 w-24 bg-surface-container-highest rounded flex items-center justify-center font-bold text-on-surface">Zomato</div>
+
+</div>
+</div>
+</section>
+<!-- 5-Step Billing Flow (Process Section) -->
+<section class="py-section-desktop px-margin-desktop max-w-7xl mx-auto overflow-hidden scroll-reveal active">
+<div class="text-center mb-[80px]">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-md">Lightning Fast 5-Step Billing</h2>
+<p class="text-on-surface-variant font-body-base text-body-base max-w-[600px] mx-auto">Our optimized workflow allows you to serve customers in seconds, not minutes.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-md relative">
+<!-- Connecting Line (Desktop) -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent -z-10"></div>
+<!-- Step 1 -->
+<div class="glass-card p-lg rounded-xl flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-md border border-primary/20">
+<span class="material-symbols-outlined text-primary">person_add</span>
+</div>
+<h3 class="font-body-bold text-body-bold mb-xs">Customer</h3>
+<p class="text-on-surface-variant text-sm">Quick identification or new entry</p>
+</div>
+<!-- Step 2 -->
+<div class="glass-card p-lg rounded-xl flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform" style="border-color: rgb(45, 51, 63);">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-md border border-primary/20">
+<span class="material-symbols-outlined text-primary">restaurant_menu</span>
+</div>
+<h3 class="font-body-bold text-body-bold mb-xs">Menu</h3>
+<p class="text-on-surface-variant text-sm">Tap-to-add items with modifiers</p>
+</div>
+<!-- Step 3 -->
+<div class="glass-card p-lg rounded-xl flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform border-primary/40 violet-glow scale-105 bg-surface-container-high">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-md shadow-lg">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<h3 class="font-body-bold text-body-bold mb-xs">Payment</h3>
+<p class="text-on-surface-variant text-sm">UPI, Cash, or Split payments</p>
+</div>
+<!-- Step 4 -->
+<div class="glass-card p-lg rounded-xl flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform" style="border-color: rgb(45, 51, 63);">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-md border border-primary/20">
+<span class="material-symbols-outlined text-primary">receipt</span>
+</div>
+<h3 class="font-body-bold text-body-bold mb-xs">KOT</h3>
+<p class="text-on-surface-variant text-sm">Instant kitchen print/display</p>
+</div>
+<!-- Step 5 -->
+<div class="glass-card p-lg rounded-xl flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform" style="border-color: rgb(45, 51, 63);">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-md border border-primary/20">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+<h3 class="font-body-bold text-body-bold mb-xs">Success</h3>
+<p class="text-on-surface-variant text-sm">Auto-SMS and sync complete</p>
+</div>
+</div>
+</section>
+<!-- Featured Highlights (Bento Grid) -->
+<section class="py-section-desktop px-margin-desktop max-w-7xl mx-auto scroll-reveal active">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg h-auto">
+<!-- AI OCR Menu Import -->
+<div class="md:col-span-2 glass-card p-xl rounded-xl flex flex-col md:flex-row gap-xl items-center overflow-hidden" style="border-color: rgb(45, 51, 63);">
+<div class="flex-1">
+<span class="text-primary font-label-caps text-label-caps mb-sm block">INTELLIGENT ONBOARDING</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">AI OCR Menu Import</h3>
+<p class="text-on-surface-variant font-body-base text-body-base mb-lg">
+                        Stop manual data entry. Scan your existing printed menu with your phone's camera or upload a PDF. Our AI automatically extracts categories, items, and prices in seconds.
+                    </p>
+<ul class="space-y-md">
+<li class="flex items-center gap-sm text-on-surface">
+<span class="material-symbols-outlined text-primary">photo_camera</span>
+<div>
+<span class="block font-body-bold text-sm">Live Camera</span>
+<span class="text-xs text-on-surface-variant">Scan physical sheets of paper menus in real-time</span>
+</div>
+</li>
+<li class="flex items-center gap-sm text-on-surface">
+<span class="material-symbols-outlined text-primary">image</span>
+<div>
+<span class="block font-body-bold text-sm">Gallery</span>
+<span class="text-xs text-on-surface-variant">Import photo uploads or screenshots from your phone</span>
+</div>
+</li>
+<li class="flex items-center gap-sm text-on-surface">
+<span class="material-symbols-outlined text-primary">picture_as_pdf</span>
+<div>
+<span class="block font-body-bold text-sm">PDF Import</span>
+<span class="text-xs text-on-surface-variant">Upload digital menus directly to extract items</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="flex-1 w-full flex justify-center">
+<div class="relative w-full max-w-[280px]">
+<img class="rounded-lg shadow-2xl border border-outline-variant/30" alt="A smartphone held in hand scanning a printed restaurant menu using an AI-powered interface. Transparent scanning beams and digital overlay text are highlighting menu items and prices in a futuristic saffron-accented HUD. The background shows a modern, darkly-lit bistro, maintaining the Midnight Harvest aesthetic with soft amber lights and sleek surfaces." src="../assets/pos_phone_mockup.png" loading="lazy" decoding="async">
+</div>
+</div>
+</div>
+<!-- Offline First -->
+<div class="glass-card p-xl rounded-xl flex flex-col justify-between" style="border-color: rgb(45, 51, 63);">
+<div>
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary">wifi_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Offline-First Core</h3>
+<p class="text-on-surface-variant font-body-base text-body-base">
+                        Internet down? No problem. KhanaBook works fully offline. Data syncs automatically to the cloud once you're back online.
+                    </p>
+</div>
+<div class="pt-xl mt-auto">
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary w-[85%] h-full"></div>
+</div>
+<span class="text-xs text-on-surface-variant mt-sm block">Reliability Score: 85% Better than Web POS</span>
+</div>
+</div>
+<!-- Split Payments -->
+<div class="glass-card p-xl rounded-xl">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary">account_balance_wallet</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Smart Split Payments</h3>
+<p class="text-on-surface-variant font-body-base text-body-base mb-lg">
+                    Handle complex payment scenarios with ease. Combine Cash and UPI on a single invoice.
+                </p>
+<div class="space-y-sm">
+<div class="flex justify-between items-center bg-surface-container p-sm rounded border border-outline-variant/10">
+<span class="text-sm font-body-bold">UPI</span>
+<span class="text-primary font-body-bold">₹450.00</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container p-sm rounded border border-outline-variant/10">
+<span class="text-sm font-body-bold">Cash</span>
+<span class="text-primary font-body-bold">₹120.00</span>
+</div>
+</div>
+</div>
+<!-- Compliance & Reports -->
+<div class="md:col-span-2 glass-card p-xl rounded-xl flex flex-col md:flex-row-reverse gap-xl items-center" style="border-color: rgb(45, 51, 63);">
+<div class="flex-1">
+<span class="text-primary font-label-caps text-label-caps mb-sm block">BUSINESS INTELLIGENCE</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Compliance &amp; Daily Reports</h3>
+<p class="text-on-surface-variant font-body-base text-body-base mb-lg">
+                        Never miss a GST filing or FSSAI renewal. Get automated alerts and professional PDF/Excel reports delivered directly to your email.
+                    </p>
+<div class="grid grid-cols-2 gap-md">
+<div class="p-md bg-surface-container rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-xs">verified</span>
+<span class="block text-sm font-body-bold">GST Ready</span>
+</div>
+<div class="p-md bg-surface-container rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-xs">notifications_active</span>
+<span class="block text-sm font-body-bold">FSSAI Alerts</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full flex justify-center relative">
+<img class="rounded-lg shadow-xl opacity-80 border border-outline-variant/30" alt="Professional POS billing screen showing restaurant menu items and prices in Indian Rupees, optimized for Android smartphones." src="../assets/pos_phone_billing_mockup.png" loading="lazy" decoding="async">
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack (Android Focus) -->
+<section class="py-section-desktop px-margin-desktop bg-surface-container-low overflow-hidden scroll-reveal active">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-section-mobile items-center">
+<div class="order-2 md:order-1 relative">
+<div class="absolute -z-10 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full -top-1/4 -left-1/4"></div>
+<div class="pos-frame max-w-[400px] mx-auto relative violet-glow">
+<img class="rounded-xl" alt="A close-up shot of a high-end Android smartphone running the KhanaBook POS application. The interface is built with Jetpack Compose, featuring a fluid grid layout, smooth animations, and a rich dark palette with vibrant orange primary buttons." src="../assets/pos_phone_billing_mockup.png" loading="lazy" decoding="async">
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-lg">Native Android Performance</h2>
+<p class="text-on-surface-variant font-body-base text-body-base mb-xl">
+                    Built from the ground up using <span class="text-primary font-body-bold">Jetpack Compose</span> and modern Android architectures. Our app is optimized for performance, even on budget merchant hardware.
+                </p>
+<div class="space-y-lg">
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-10 h-10 bg-primary/20 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">bolt</span>
+</div>
+<div>
+<h4 class="font-body-bold text-body-bold">60 FPS Fluid UI</h4>
+<p class="text-sm text-on-surface-variant">Zero lag animations for rapid-fire billing.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-10 h-10 bg-primary/20 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">smartphone</span>
+</div>
+<div>
+<h4 class="font-body-bold text-body-bold">Adaptive Layouts</h4>
+<p class="text-sm text-on-surface-variant">Perfectly optimized for all Android smartphones and screen sizes.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-10 h-10 bg-primary/20 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">cloud_sync</span>
+</div>
+<div>
+<h4 class="font-body-bold text-body-bold">Jetpack WorkManager</h4>
+<p class="text-sm text-on-surface-variant">Reliable background data synchronization.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/20 w-full py-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-7xl mx-auto">
+<div class="space-y-6">
+<a href="home.html" class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary mb-4">
+  <img src="../assets/khanabook_logo.png" alt="KhanaBook Logo" class="h-8 w-auto shrink-0">
+  KhanaBook
+</a>
+<p class="text-body-md font-body-md text-on-surface-variant">© <span class="copyright-year">2026</span> KhanaBook POS. First year free.</p>
+<div class="flex flex-col gap-2 mt-4">
+<a class="text-on-surface-variant dark:text-slate-gray hover:text-primary transition-all text-label-sm font-label-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 rounded" href="mailto:kbook@pcts.tech">kbook@pcts.tech</a>
+<a class="text-on-surface-variant dark:text-slate-gray hover:text-primary transition-all text-label-sm font-label-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 rounded" href="tel:9471676935">+91 94716 76935</a>
+</div>
+<div class="flex flex-col gap-3 mt-4 pt-4 border-t border-outline-variant/20">
+  <a href="https://play.google.com/store/apps/details?id=tech.pcts.khanabook" 
+     target="_blank" rel="noopener"
+     class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl 
+            bg-surface-container-high border border-outline-variant/50 
+            hover:border-primary transition-colors w-fit group">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.18 23.76a2 2 0 0 1-.68-1.53V1.77A2 2 0 0 1 3.18.24L13.41 12 3.18 23.76z" 
+            fill="#4CAF50"/>
+      <path d="M16.9 15.51 4.94 22.19l-.9.52 9.37-10.71 3.49 3.51z" fill="#F44336"/>
+      <path d="M20.57 10.16A2 2 0 0 1 21.5 12a2 2 0 0 1-.93 1.84l-2.82 1.63-3.74-3.47 3.74-3.47 2.82 1.63z" 
+            fill="#FFC107"/>
+      <path d="M4.04 1.29 16.9 8.49l-3.49 3.51L4.04 1.29z" fill="#2196F3"/>
+    </svg>
+    <div>
+      <div class="text-[9px] text-on-surface-variant uppercase tracking-wider">Get it on</div>
+      <div class="text-label-sm font-bold text-on-surface group-hover:text-primary 
+                  transition-colors">Google Play</div>
+    </div>
+  </a>
+  <a href="https://wa.me/919471676935?text=Hi%2C%20I%27m%20interested%20in%20KhanaBook%20POS" 
+     target="_blank" rel="noopener"
+     class="inline-flex items-center gap-2 text-label-sm text-on-surface-variant 
+            hover:text-primary transition-colors group">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" 
+         class="text-[#25D366] group-hover:text-primary transition-colors" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+    Chat on WhatsApp
+  </a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-on-surface font-bold text-label-md font-label-md">Product</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="android-pos.html">POS</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="features.html">Features</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="pricing-plans.html">Pricing</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-on-surface font-bold text-label-md font-label-md">Resources</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="blog.html">Blog</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="help-center.html">Help Center</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="our-story.html">About Us</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="get-started.html">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-on-surface font-bold text-label-md font-label-md">Legal</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="legal-privacy.html">Privacy</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-slate-gray hover:underline decoration-primary transition-all text-label-sm font-label-sm" href="legal-privacy.html#terms">Terms</a></li>
+</ul>
+</div>
+</div>
+</footer>
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 z-[200] p-4 md:p-6">
+    <div class="max-w-7xl mx-auto glass-card rounded-2xl p-4 md:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-2xl border border-outline-variant/30">
+      <div class="flex items-start gap-3 flex-1">
+        <span class="material-symbols-outlined text-primary text-2xl shrink-0">cookie</span>
+        <p class="text-body-sm text-on-surface-variant">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+      </div>
+      <div class="flex gap-3 shrink-0">
+        <button id="cookie-decline" class="px-5 py-2.5 rounded-xl border border-outline-variant/50 text-body-sm text-on-surface-variant hover:bg-surface-container transition-all">Decline</button>
+        <button id="cookie-accept" class="px-5 py-2.5 rounded-xl bg-primary text-on-primary text-body-sm font-bold hover:brightness-110 transition-all violet-glow">Accept</button>
+      </div>
+    </div>
+  </div>
+<script src="../js/android-pos.js" defer></script>
+
+
+  <!-- WhatsApp Float Button -->
+
+</body></html>
+
+
+
+
+
+
+
