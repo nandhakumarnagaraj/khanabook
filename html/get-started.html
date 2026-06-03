@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/home.css">
 <link rel="stylesheet" href="../css/get-started.css">
 <link rel="stylesheet" href="../css/khanabook-premium.css">
       
@@ -58,12 +59,12 @@
     })();
   </script>
 </head>
-<body class="bg-background text-on-surface font-body-base overflow-x-hidden">
+<body class="bg-background text-on-surface font-body-base overflow-x-hidden" data-page-version="1.1.0">
 <!-- Navigation -->
 <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 h-16">
 <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
 <a href="home.html" class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary">
-<img src="../assets/khanabook_logo.png" alt="KhanaBook" class="h-8 w-auto shrink-0">
+<img src="../assets/khanabook_logo.png" alt="KhanaBook Logo" class="h-8 w-auto shrink-0" width="32" height="32">
 KhanaBook</a>
 <div class="hidden md:flex items-center gap-8">
 <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors" href="features.html">Features</a>
@@ -77,13 +78,13 @@ KhanaBook</a>
 <span class="material-symbols-outlined text-lg text-on-surface-variant" id="theme-icon">light_mode</span>
 </button>
 <a href="get-started.html" class="nav-cta hidden md:inline-block">Get First Year Free</a>
-<button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden w-9 h-9 rounded-full flex items-center justify-center border border-outline-variant/50 hover:border-primary transition-colors bg-surface-container/50 text-on-surface-variant" aria-label="Toggle navigation menu">
+<button id="hamburger-trigger" aria-expanded="false" class="md:hidden w-9 h-9 rounded-full flex items-center justify-center border border-outline-variant/50 hover:border-primary transition-colors bg-surface-container/50 text-on-surface-variant" aria-label="Toggle navigation menu">
           <span class="material-symbols-outlined text-lg" id="mobile-menu-icon">menu</span>
         </button>
 </div>
 </div>
 </nav>
-<div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-surface/95 backdrop-blur-md border-b border-outline-variant/30 z-40 py-4 px-6 flex flex-col gap-1 shadow-lg md:hidden">
+<div id="mobile-drawer" aria-hidden="true" class="hidden fixed top-16 left-0 w-full bg-surface/95 backdrop-blur-md border-b border-outline-variant/30 z-40 py-4 px-6 flex flex-col gap-1 shadow-lg md:hidden">
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="home.html">Home</a>
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="features.html">Features</a>
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="pos-hardware.html">POS Systems</a>
@@ -93,7 +94,7 @@ KhanaBook</a>
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="get-started.html">Contact</a>
     <a href="get-started.html" class="mobile-cta mt-2">Get First Year Free</a>
   </div>
-<main class="flex-grow pt-24 pb-section-desktop relative">
+<main class="flex-grow pt-20 pb-section-desktop relative">
 <div class="hero-gradient absolute top-0 left-0 w-full h-[600px] -z-10"
 style="background: radial-gradient(circle at 50% 30%, rgba(124, 58, 237, 0.12) 0%, transparent 70%);">
 </div>
@@ -144,9 +145,9 @@ style="background: radial-gradient(circle at 50% 30%, rgba(124, 58, 237, 0.12) 0
 </div>
 <div class="pt-xl border-t border-outline-variant/20 animate-fade-in" style="animation-delay: 0.25s;">
 <div class="flex -space-x-3">
-<img class="w-10 h-10 rounded-full border-2 border-background object-cover" alt="Professional portrait of a smiling restaurant owner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAjGLjhWn72upcWEB7DBdqkeo6PIXBiaxNOVXZMIQ29_qgwGNE3g6RBx6TwZH6hO-ynNVgrBZY2FbhIM04PYTVWTG9srvfkZqBbk7TsW1MEiN-Kt85htC9AP53rvjYKzUh4KWVXgZxz1dn9s_OWnwmGDFV5MnHGGsD_iQoXPa6iWGE1233p-sJ2yJkYGItA2uIf1Ll-ofu_gaE2G50V2UYiJI75FfRo-gklhqIttLlqM9T5MULKYsP4XSQ2DJi8OLF8gFX7XFYt3w" loading="lazy" decoding="async">
-<img class="w-10 h-10 rounded-full border-2 border-background object-cover" alt="Confident female chef portrait in minimalist dark studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyBR68cVwUP69TbiA4n5GIbHhlNep0dzBdE80pstgDahC0dboHUB8bOemQ1A1OIjIdcRYxPn21sENeikCZ3YbMvTvrDfBBVkZVQjRyTKufxIxmciB4K6g3n1HtagsAA8wUvqxEInRf22aNDFTvS_3tW6k-FJOmEshlHKDkOg_N6YmMUE8MxfXmp3UPsTtutUBk8XAwMCUtTuTb3tsQiPLabd_YgPaAuq0nrDh5cgdK9q_9e65ZhV1nnB1GppywvN2hEgEl8flbZgA" loading="lazy" decoding="async">
-<img class="w-10 h-10 rounded-full border-2 border-background object-cover" alt="Business professional headshot in sophisticated dark workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb9SnQ2I0sukb0ktamsYWBaxtMGE63ROJbJEqixtjDKmjMOypVkW5RtygqHTZWQxueTeUc7a7u3zB1z0TTLYjbirkx1Y-59bMU8Cs3VV3LuJ-rczbgJBDXRuOoyD9CfyQ3JQHlJ4-pWiZwjRkJkq9jDt26VTtY1XEH86pWAOUrws0-2shzAIkKn-DngSP7S_5TtMtoebud7haGswiNbcFLG3doenAHthtzX8APQi7-ADoWFMKdQSHb2G_RsgyUkdz3-sdoMBtemHQ" loading="lazy" decoding="async">
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" alt="Professional portrait of a smiling restaurant owner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAjGLjhWn72upcWEB7DBdqkeo6PIXBiaxNOVXZMIQ29_qgwGNE3g6RBx6TwZH6hO-ynNVgrBZY2FbhIM04PYTVWTG9srvfkZqBbk7TsW1MEiN-Kt85htC9AP53rvjYKzUh4KWVXgZxz1dn9s_OWnwmGDFV5MnHGGsD_iQoXPa6iWGE1233p-sJ2yJkYGItA2uIf1Ll-ofu_gaE2G50V2UYiJI75FfRo-gklhqIttLlqM9T5MULKYsP4XSQ2DJi8OLF8gFX7XFYt3w" loading="lazy" decoding="async" width="40" height="40">
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" alt="Confident female chef portrait in minimalist dark studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyBR68cVwUP69TbiA4n5GIbHhlNep0dzBdE80pstgDahC0dboHUB8bOemQ1A1OIjIdcRYxPn21sENeikCZ3YbMvTvrDfBBVkZVQjRyTKufxIxmciB4K6g3n1HtagsAA8wUvqxEInRf22aNDFTvS_3tW6k-FJOmEshlHKDkOg_N6YmMUE8MxfXmp3UPsTtutUBk8XAwMCUtTuTb3tsQiPLabd_YgPaAuq0nrDh5cgdK9q_9e65ZhV1nnB1GppywvN2hEgEl8flbZgA" loading="lazy" decoding="async" width="40" height="40">
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" alt="Business professional headshot in sophisticated dark workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb9SnQ2I0sukb0ktamsYWBaxtMGE63ROJbJEqixtjDKmjMOypVkW5RtygqHTZWQxueTeUc7a7u3zB1z0TTLYjbirkx1Y-59bMU8Cs3VV3LuJ-rczbgJBDXRuOoyD9CfyQ3JQHlJ4-pWiZwjRkJkq9jDt26VTtY1XEH86pWAOUrws0-2shzAIkKn-DngSP7S_5TtMtoebud7haGswiNbcFLG3doenAHthtzX8APQi7-ADoWFMKdQSHb2G_RsgyUkdz3-sdoMBtemHQ" loading="lazy" decoding="async" width="40" height="40">
 </div>
 <p class="mt-4 font-body-base text-body-base text-on-surface-variant">
 <span class="text-primary font-bold">99%</span> satisfaction rate from our customers
@@ -235,7 +236,7 @@ Call +91 94716 76935
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-7xl mx-auto">
 <div class="space-y-6">
 <a href="home.html" class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary mb-4">
-  <img src="../assets/khanabook_logo.png" alt="KhanaBook Logo" class="h-8 w-auto shrink-0">
+  <img src="../assets/khanabook_logo.png" alt="KhanaBook Logo" class="h-8 w-auto shrink-0" width="32" height="32">
   KhanaBook
 </a>
 <p class="text-body-md font-body-md text-on-surface-variant">© <span class="copyright-year">2026</span> KhanaBook POS. First year free.</p>
@@ -315,6 +316,11 @@ Call +91 94716 76935
     </div>
   </div>
 <script src="../js/get-started.js" defer></script>
+
+<!-- Scroll to top -->
+<button id="scroll-to-top" aria-label="Scroll to top">
+  <span class="material-symbols-outlined">arrow_upward</span>
+</button>
 
 
   <!-- WhatsApp Float Button -->

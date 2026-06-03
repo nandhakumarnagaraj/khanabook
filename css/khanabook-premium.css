@@ -175,12 +175,12 @@ nav a[href="home.html"] {
 }
 
 button[aria-label="Toggle theme"],
-#mobile-menu-btn {
+#hamburger-trigger {
   background: var(--premium-theme-btn-bg) !important;
   border-color: var(--premium-theme-btn-border) !important;
 }
 
-#mobile-menu {
+#mobile-drawer {
   background: var(--premium-mobile-menu-bg) !important;
   border-color: var(--premium-nav-border) !important;
 }
@@ -332,8 +332,9 @@ h1, h2, h3 {
 
 /* ── Hero visual ────────────────────────────────────────────── */
 .home-hero {
-  min-height: calc(100vh - 72px);
-  padding-top: clamp(1.25rem, 3vh, 2.5rem);
+  min-height: auto;
+  padding-top: clamp(2rem, 5vh, 4rem);
+  padding-bottom: clamp(2rem, 5vh, 4rem);
 }
 
 .home-hero .inline-flex,
@@ -503,4 +504,123 @@ input:focus, textarea:focus, select:focus {
   }
 
   footer .grid { gap: 2rem !important; }
+}
+
+
+/* Mobile Drawer transitions for slide-down animation */
+#mobile-drawer {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 200ms ease, transform 200ms ease;
+  display: none;
+}
+#mobile-drawer.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex !important;
+}
+
+/* R10: Footer Responsive Adjustments */
+@media (max-width: 767px) {
+  footer .grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  /* R10.6: Footer mobile border top separator and padding top */
+  footer .grid > div:not(:first-child) {
+    border-top: 1px solid var(--color-outline-variant);
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+}
+
+/* ── Scroll-to-top button ───────────────────────────────────── */
+#scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 250;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid var(--premium-glass-border);
+  background: linear-gradient(160deg, var(--premium-glass-bg-start), var(--premium-glass-bg-end));
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 6px 0 var(--color-primary-dark),
+    0 12px 32px rgba(124, 58, 237, 0.28);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* hidden by default */
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition:
+    opacity 250ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 250ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 150ms ease;
+}
+
+#scroll-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#scroll-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 0 var(--color-primary-dark),
+    0 18px 40px rgba(124, 58, 237, 0.4);
+}
+
+#scroll-to-top:active {
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 var(--color-primary-dark),
+    0 6px 16px rgba(124, 58, 237, 0.2);
+}
+
+.dark #scroll-to-top {
+  box-shadow:
+    0 6px 0 #6D28D9,
+    0 12px 32px rgba(159, 103, 255, 0.3);
+  color: var(--color-primary);
+}
+
+.dark #scroll-to-top:hover {
+  box-shadow:
+    0 8px 0 #6D28D9,
+    0 18px 40px rgba(159, 103, 255, 0.45);
+}
+
+#scroll-to-top .material-symbols-outlined {
+  font-size: 22px;
+  font-variation-settings: 'FILL' 0, 'wght' 600;
+  transition: transform 150ms ease;
+}
+
+#scroll-to-top:hover .material-symbols-outlined {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  #scroll-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
 }

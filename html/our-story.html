@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/home.css">
 <link rel="stylesheet" href="../css/our-story.css">
 <link rel="stylesheet" href="../css/khanabook-premium.css">
       
@@ -58,12 +59,12 @@
     })();
   </script>
 </head>
-<body class="bg-background text-on-surface font-body-base overflow-x-hidden">
+<body class="bg-background text-on-surface font-body-base overflow-x-hidden" data-page-version="1.1.0">
 <!-- TopNavBar Shell -->
 <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 h-16">
 <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
 <a href="home.html" class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary">
-<img src="../assets/khanabook_logo.png" alt="KhanaBook" class="h-8 w-auto shrink-0">
+<img src="../assets/khanabook_logo.png" alt="KhanaBook Logo" class="h-8 w-auto shrink-0" width="32" height="32">
 KhanaBook</a>
 <div class="hidden md:flex items-center gap-8">
 <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors" href="features.html">Features</a>
@@ -77,13 +78,13 @@ KhanaBook</a>
 <span class="material-symbols-outlined text-lg text-on-surface-variant" id="theme-icon">light_mode</span>
 </button>
 <a href="get-started.html" class="nav-cta hidden md:inline-block">Get First Year Free</a>
-<button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden w-9 h-9 rounded-full flex items-center justify-center border border-outline-variant/50 hover:border-primary transition-colors bg-surface-container/50 text-on-surface-variant" aria-label="Toggle navigation menu">
+<button id="hamburger-trigger" aria-expanded="false" class="md:hidden w-9 h-9 rounded-full flex items-center justify-center border border-outline-variant/50 hover:border-primary transition-colors bg-surface-container/50 text-on-surface-variant" aria-label="Toggle navigation menu">
           <span class="material-symbols-outlined text-lg" id="mobile-menu-icon">menu</span>
         </button>
 </div>
 </div>
 </nav>
-<div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-surface/95 backdrop-blur-md border-b border-outline-variant/30 z-40 py-4 px-6 flex flex-col gap-1 shadow-lg md:hidden">
+<div id="mobile-drawer" aria-hidden="true" class="hidden fixed top-16 left-0 w-full bg-surface/95 backdrop-blur-md border-b border-outline-variant/30 z-40 py-4 px-6 flex flex-col gap-1 shadow-lg md:hidden">
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="home.html">Home</a>
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="features.html">Features</a>
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="pos-hardware.html">POS Systems</a>
@@ -93,7 +94,7 @@ KhanaBook</a>
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5" href="get-started.html">Contact</a>
     <a href="get-started.html" class="mobile-cta mt-2">Get First Year Free</a>
   </div>
-<main class="pt-24">
+<main class="pt-20">
 <!-- Hero Section -->
 <section class="max-w-7xl mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative py-section-desktop overflow-hidden">
 <div class="hero-gradient absolute inset-0 -z-10"
@@ -127,7 +128,7 @@ Our Values
 <div class="relative animate-float hidden lg:block">
 <div class="absolute -inset-10 bg-primary/10 blur-[100px] rounded-full"></div>
 <div class="glass-card p-4 rounded-[2rem] shadow-2xl overflow-hidden relative border border-white/5">
-<img class="rounded-[1.5rem] w-full aspect-[4/3] object-cover grayscale-[0.2] contrast-[1.1]" alt="A cinematic, low-angle shot of a sleek, modern industrial POS terminal in a high-end Mumbai restaurant. The lighting is moody and sophisticated, featuring deep shadows and warm saffron orange highlights that reflect off the terminal's matte slate surface. Professional staff are blurred in the background, creating a sense of a busy yet controlled premium environment." src="../assets/pos_terminal_industrial.png" loading="lazy" decoding="async">
+<img class="rounded-[1.5rem] w-full aspect-[4/3] object-cover grayscale-[0.2] contrast-[1.1]" alt="A cinematic, low-angle shot of a sleek, modern industrial POS terminal in a high-end Mumbai restaurant. The lighting is moody and sophisticated, featuring deep shadows and warm saffron orange highlights that reflect off the terminal's matte slate surface. Professional staff are blurred in the background, creating a sense of a busy yet controlled premium environment." src="../assets/pos_terminal_industrial.png" loading="lazy" decoding="async" width="1024" height="1024">
 </div>
 </div>
 </section>
@@ -145,10 +146,10 @@ Our Values
                     </p>
 </div>
 <div class="md:col-span-5 aspect-square md:aspect-auto rounded-xl overflow-hidden border border-outline-variant/30">
-<img class="w-full h-full object-cover grayscale-[0.1]" alt="A professional chef and a tech entrepreneur shaking hands in a modern, industrial kitchen setting during golden hour. The sunlight filters through large windows, highlighting the steam from copper pots and the sleek lines of a smartphone POS system on a marble counter. The mood is optimistic, symbolizing the bridge between traditional culinary art and future-forward technology." src="../assets/chef_handshake.png" loading="lazy" decoding="async">
+<img class="w-full h-full object-cover grayscale-[0.1]" alt="A professional chef and a tech entrepreneur shaking hands in a modern, industrial kitchen setting during golden hour. The sunlight filters through large windows, highlighting the steam from copper pots and the sleek lines of a smartphone POS system on a marble counter. The mood is optimistic, symbolizing the bridge between traditional culinary art and future-forward technology." src="../assets/chef_handshake.png" loading="lazy" decoding="async" width="1024" height="1024">
 </div>
 <div class="md:col-span-4 rounded-xl overflow-hidden border border-outline-variant/30 aspect-square md:aspect-auto">
-<img class="w-full h-full object-cover" alt="A minimalist, high-tech server room with glowing orange LEDs reflecting on dark, metallic surfaces. The perspective is symmetrical and deep, suggesting vast data processing power and technological stability. The aesthetic is futuristic and clean, dominated by a deep black and saffron color palette." src="../assets/server_room.png" loading="lazy" decoding="async">
+<img class="w-full h-full object-cover" alt="A minimalist, high-tech server room with glowing orange LEDs reflecting on dark, metallic surfaces. The perspective is symmetrical and deep, suggesting vast data processing power and technological stability. The aesthetic is futuristic and clean, dominated by a deep black and saffron color palette." src="../assets/server_room.png" loading="lazy" decoding="async" width="1024" height="1024">
 </div>
 <div class="md:col-span-8 glass-card p-xl rounded-xl flex flex-col justify-center border-primary/20">
 <h2 class="font-headline-md text-headline-md text-on-surface mb-md">The Restaurant-First Mission</h2>
@@ -272,7 +273,7 @@ Our Values
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-7xl mx-auto">
 <div class="space-y-6">
 <a href="home.html" class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary mb-4">
-  <img src="../assets/khanabook_logo.png" alt="KhanaBook Logo" class="h-8 w-auto shrink-0">
+  <img src="../assets/khanabook_logo.png" alt="KhanaBook Logo" class="h-8 w-auto shrink-0" width="32" height="32">
   KhanaBook
 </a>
 <p class="text-body-md font-body-md text-on-surface-variant">© <span class="copyright-year">2026</span> KhanaBook POS. First year free.</p>
@@ -352,6 +353,11 @@ Our Values
     </div>
   </div>
 <script src="../js/our-story.js" defer></script>
+
+<!-- Scroll to top -->
+<button id="scroll-to-top" aria-label="Scroll to top">
+  <span class="material-symbols-outlined">arrow_upward</span>
+</button>
 
 
   <!-- WhatsApp Float Button -->

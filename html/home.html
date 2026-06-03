@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,12 +18,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/home.css">
-  <link rel="stylesheet" href="../css/khanabook-premium.css">
   <meta property="og:image" content="../assets/khanabook_logo.png">
   <script type="application/ld+json">
 {
@@ -48,8 +45,27 @@
   "url": "https://khanabook.com"
 }
 </script>
-  <link rel="canonical" href="https://khanabook.com/home.html">
-  <meta property="og:url" content="https://khanabook.com/home.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "KhanaBook POS",
+  "operatingSystem": "Android",
+  "applicationCategory": "BusinessApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "ratingCount": "184"
+  }
+}
+</script>
+  <link rel="canonical" href="https://khanabook.com/">
+  <meta property="og:url" content="https://khanabook.com/">
   <meta name="robots" content="index, follow">
   <!-- Theme initializer: inline & synchronous to prevent flash of wrong theme -->
   <script>
@@ -90,8 +106,8 @@
           aria-label="Toggle theme">
           <span class="material-symbols-outlined text-lg text-on-surface-variant" id="theme-icon">light_mode</span>
         </button>
-        <a href="get-started.html" class="nav-cta hidden md:inline-block">Get First Year Free</a>
-        <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+        <a href="get-started.html" class="nav-cta hidden md:inline-block">Start First Year Free</a>
+        <button id="hamburger-trigger" aria-expanded="false"
           class="md:hidden w-9 h-9 rounded-full flex items-center justify-center border border-outline-variant/50 hover:border-primary transition-colors bg-surface-container/50 text-on-surface-variant"
           aria-label="Toggle navigation menu">
           <span class="material-symbols-outlined text-lg" id="mobile-menu-icon">menu</span>
@@ -99,7 +115,7 @@
       </div>
     </div>
   </nav>
-  <div id="mobile-menu"
+  <div id="mobile-drawer" aria-hidden="true"
     class="hidden fixed top-16 left-0 w-full bg-surface/95 backdrop-blur-md border-b border-outline-variant/30 z-40 py-4 px-6 flex flex-col gap-1 shadow-lg md:hidden">
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5"
       href="home.html">Home</a>
@@ -115,14 +131,14 @@
       href="help-center.html">Help Center</a>
     <a class="nav-link font-body-base text-body-base text-on-surface-variant hover:text-primary transition-colors py-2.5"
       href="get-started.html">Contact</a>
-    <a href="get-started.html" class="mobile-cta mt-2">Get First Year Free</a>
+    <a href="get-started.html" class="mobile-cta mt-2">Start First Year Free</a>
   </div>
   <main class="pt-24 pb-20">
     <!-- Hero Section -->
     <section data-reveal
       class="home-hero max-w-7xl mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
       <div class="hero-gradient absolute inset-0 -z-10"
-        style="background: radial-gradient(circle at 0.625% 16.6319%, rgba(124, 58, 237, 0.15) 0%, transparent 70%);">
+        style="--gx: 0.625%; --gy: 16.6319%;">
       </div>
       <div class="space-y-6">
         <div
@@ -142,11 +158,18 @@
             class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md flex items-center gap-2 hover:brightness-105 active:scale-95 transition-all violet-glow">
             Start First Year Free
           </a>
-          <button onclick="document.getElementById('demo-modal').classList.remove('hidden')"
+          <button id="watch-demo-btn"
             class="border border-outline-variant bg-surface-container/50 text-on-surface px-8 py-4 rounded-xl font-label-md text-label-md flex items-center gap-2 hover:bg-surface-variant transition-all backdrop-blur-md">
-
+            <span class="material-symbols-outlined text-lg" aria-hidden="true">play_circle</span>
             Watch Demo Video
           </button>
+        </div>
+        <div class="text-label-sm font-label-sm text-on-surface-variant/80 flex flex-wrap items-center gap-x-4 gap-y-1 pt-1 opacity-90">
+          <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-primary" aria-hidden="true">verified</span> ₹0 for 12 months</span>
+          <span class="text-outline-variant/50" aria-hidden="true">•</span>
+          <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-primary" aria-hidden="true">credit_card_off</span> No card required</span>
+          <span class="text-outline-variant/50" aria-hidden="true">•</span>
+          <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-primary" aria-hidden="true">cancel</span> Cancel anytime</span>
         </div>
         <div class="grid grid-cols-2 gap-8 ">
           <div>
@@ -221,17 +244,31 @@
           <p class="text-body-sm font-body-sm text-on-surface-variant">Generate bill-specific QR codes instantly for
             touchless, error-free digital payments at the table.</p>
         </div>
-        <!-- Large Card -->
-        <div class="md:col-span-2 glass-card glass-interactive p-8 rounded-3xl relative overflow-hidden group">
-          <div class="absolute bottom-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+        <!-- Large Card (GST & FSSAI Compliance) -->
+        <div class="md:col-span-2 glass-card glass-interactive p-8 rounded-3xl relative overflow-hidden group flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <div class="absolute bottom-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none">
             <span class="material-symbols-outlined text-[120px]">verified_user</span>
           </div>
-          <div class="relative z-10 flex flex-col justify-end h-full">
+          <div class="relative z-10 max-w-md">
             <span class="material-symbols-outlined text-tertiary mb-4 text-[40px]">gavel</span>
             <h3 class="text-headline-md font-headline-md mb-4">GST &amp; FSSAI Compliance</h3>
-            <p class="text-body-md font-body-md text-on-surface-variant max-w-md">Stay ahead of regulations with
-              automated GST invoicing and mandatory FSSAI display integration. Built for the Indian hospitality
-              regulatory landscape.</p>
+            <p class="text-body-md font-body-md text-on-surface-variant">Stay ahead of regulations with automated GST invoicing and mandatory FSSAI display integration. Built for the Indian hospitality regulatory landscape.</p>
+          </div>
+          <div class="relative shrink-0 flex flex-col gap-3 w-full md:w-auto mt-4 md:mt-0 z-10">
+            <div class="flex items-center gap-3 bg-surface/50 border border-outline-variant/30 p-3 rounded-2xl shadow-sm backdrop-blur-sm">
+              <span class="material-symbols-outlined text-[#10B981]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <div>
+                <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/80 font-bold">GSTIN Invoicing</div>
+                <div class="text-body-sm font-semibold text-on-surface">Active • 22AAAAA0000A1Z5</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 bg-surface/50 border border-outline-variant/30 p-3 rounded-2xl shadow-sm backdrop-blur-sm">
+              <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+              <div>
+                <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/80 font-bold">FSSAI License</div>
+                <div class="text-body-sm font-semibold text-on-surface">Verified • 10024011000124</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -277,34 +314,50 @@
         </div>
       </div>
 
-      <!-- Score + CTA -->
-      <div class="flex flex-col items-center gap-5">
-        <div class="flex items-center gap-4">
-          <div class="text-center px-6 py-3 rounded-2xl glass-card border border-primary/30">
-            <div style="font-size:28px;font-weight:900;color:var(--color-primary);line-height:1;">11/11</div>
-            <div class="text-label-sm text-on-surface-variant mt-1">KhanaBook Score</div>
-          </div>
-          <div class="text-on-surface-variant text-body-sm font-body-sm">vs</div>
-          <div class="flex gap-3">
-            <div class="text-center px-4 py-3 rounded-2xl bg-surface-container border border-outline-variant/20">
-              <div class="text-label-md font-bold text-on-surface-variant">4/11</div>
-              <div class="text-label-sm text-slate-gray">Petpooja</div>
-            </div>
-            <div class="text-center px-4 py-3 rounded-2xl bg-surface-container border border-outline-variant/20">
-              <div class="text-label-md font-bold text-on-surface-variant">3/11</div>
-              <div class="text-label-sm text-slate-gray">Loyverse</div>
-            </div>
-            <div class="text-center px-4 py-3 rounded-2xl bg-surface-container border border-outline-variant/20">
-              <div class="text-label-md font-bold text-on-surface-variant">2/11</div>
-              <div class="text-label-sm text-slate-gray">Limetray</div>
-            </div>
-          </div>
-        </div>
-        <a href="features.html#why-khanabook"
-          class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:opacity-80 transition-opacity">
-          See full feature comparison
-          <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
-        </a>
+      <!-- Comparison Table -->
+      <div class="compare-table-wrapper overflow-x-auto rounded-3xl border border-outline-variant/30 glass-card mt-8">
+        <table class="w-full text-left border-collapse min-w-[700px]">
+          <thead>
+            <tr class="border-b border-outline-variant/30 bg-surface-container/50">
+              <th class="p-5 font-headline-md text-on-surface">Feature</th>
+              <th class="p-5 font-headline-md text-primary font-bold">KhanaBook POS</th>
+              <th class="p-5 font-headline-md text-on-surface-variant/80">PetPooja</th>
+              <th class="p-5 font-headline-md text-on-surface-variant/80">Posist</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-outline-variant/20 text-body-md">
+            <tr>
+              <td class="p-5 font-semibold text-on-surface">Pricing</td>
+              <td class="p-5 text-primary font-bold">₹0 First Year (Free)</td>
+              <td class="p-5 text-on-surface-variant">₹15,000+ / year</td>
+              <td class="p-5 text-on-surface-variant">₹25,000+ / year</td>
+            </tr>
+            <tr>
+              <td class="p-5 font-semibold text-on-surface">Offline Capabilities</td>
+              <td class="p-5 text-on-surface">100% full local billing & database sync</td>
+              <td class="p-5 text-on-surface-variant">Partial sync (janky)</td>
+              <td class="p-5 text-on-surface-variant">Requires active cloud connection</td>
+            </tr>
+            <tr>
+              <td class="p-5 font-semibold text-on-surface">Menu Setup</td>
+              <td class="p-5 text-on-surface">AI menu OCR import (5 seconds)</td>
+              <td class="p-5 text-on-surface-variant">Manual data entry (days)</td>
+              <td class="p-5 text-on-surface-variant">Paid onboarding setup (weeks)</td>
+            </tr>
+            <tr>
+              <td class="p-5 font-semibold text-on-surface">Dynamic UPI & Splits</td>
+              <td class="p-5 text-on-surface">Built-in (instant QR & split billing)</td>
+              <td class="p-5 text-on-surface-variant">Requires external payment fees</td>
+              <td class="p-5 text-on-surface-variant">Paid addon custom modules</td>
+            </tr>
+            <tr>
+              <td class="p-5 font-semibold text-on-surface">Compliance Checks</td>
+              <td class="p-5 text-on-surface">Auto-validated GST & FSSAI lookup</td>
+              <td class="p-5 text-on-surface-variant">Manual entry verification only</td>
+              <td class="p-5 text-on-surface-variant">Manual entry verification only</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     <!-- Testimonials Carousel -->
@@ -314,119 +367,96 @@
         <p class="text-body-md font-body-md text-slate-gray">Hear from the businesses that run on KhanaBook every day.
         </p>
       </div>
-      <div class="relative overflow-hidden">
-        <div id="testimonials-track" class="flex transition-transform duration-500 ease-out">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card min-w-full px-2">
-            <div class="glass-card p-8 md:p-10 rounded-3xl max-w-3xl mx-auto">
-              <div class="flex items-center gap-1 mb-6">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-              </div>
-              <blockquote class="text-body-lg font-body-lg text-on-surface mb-8 leading-relaxed">
-                "KhanaBook completely transformed how we manage our restaurant. The offline-first billing is a lifesaver
-                during network outages, and the AI menu import saved us days of manual data entry. Customer split
-                payments are incredibly smooth."
-              </blockquote>
-              <div class="flex items-center gap-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-lg">
-                  RO</div>
-                <div>
-                  <p class="font-body-bold text-body-bold text-on-surface">Restaurant Owner</p>
-                  <p class="text-body-sm text-on-surface-variant">Delhi NCR</p>
+
+      <div class="testimonials-carousel" role="region" aria-roledescription="carousel" aria-label="Customer Testimonials">
+        <div id="carousel-live" class="sr-only" aria-live="polite">Testimonial 1 of 3</div>
+        <div class="testimonials-clip">
+          <div id="testimonials-track" class="testimonials-track transition-transform duration-500 ease-out">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="tcard">
+                <span class="tcard-quote" aria-hidden="true">"</span>
+                <div class="tcard-author">
+                  <div class="tcard-avatar">AK</div>
+                  <div>
+                    <p class="tcard-name">Arjun Krishnamurthy</p>
+                    <p class="tcard-location">Chennai, Tamil Nadu</p>
+                  </div>
                 </div>
+                <div class="tcard-stars" role="img" aria-label="Rated 5 out of 5">
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                </div>
+                <blockquote class="tcard-body">
+                  KhanaBook completely transformed how we manage our restaurant. The offline-first billing is a lifesaver during network outages, and the AI menu import saved us days of manual data entry. Customer split payments are incredibly smooth.
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="tcard">
+                <span class="tcard-quote" aria-hidden="true">"</span>
+                <div class="tcard-author">
+                  <div class="tcard-avatar">SP</div>
+                  <div>
+                    <p class="tcard-name">Senthil Pandian</p>
+                    <p class="tcard-location">Madurai, Tamil Nadu</p>
+                  </div>
+                </div>
+                <div class="tcard-stars" role="img" aria-label="Rated 5 out of 5">
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                </div>
+                <blockquote class="tcard-body">
+                  We run 3 outlets and KhanaBook's multi-location sync is flawless. The dual printer setup means our kitchen gets tickets instantly while customers get their receipts. It's cut our billing time in half.
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="tcard">
+                <span class="tcard-quote" aria-hidden="true">"</span>
+                <div class="tcard-author">
+                  <div class="tcard-avatar">RN</div>
+                  <div>
+                    <p class="tcard-name">Rakesh Nair</p>
+                    <p class="tcard-location">Bengaluru, Karnataka</p>
+                  </div>
+                </div>
+                <div class="tcard-stars" role="img" aria-label="Rated 5 out of 5">
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                  <span class="material-symbols-outlined icon-star">star</span>
+                </div>
+                <blockquote class="tcard-body">
+                  The GST compliance features alone saved us from a major penalty. The FSSAI auto-lookup and automated GST invoicing make tax season stress-free. Plus the WhatsApp invoice sharing is a hit with our customers.
+                </blockquote>
               </div>
             </div>
           </div>
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card min-w-full px-2">
-            <div class="glass-card p-8 md:p-10 rounded-3xl max-w-3xl mx-auto">
-              <div class="flex items-center gap-1 mb-6">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-              </div>
-              <blockquote class="text-body-lg font-body-lg text-on-surface mb-8 leading-relaxed">
-                "We run 3 outlets and KhanaBook's multi-location sync is flawless. The dual printer setup means our
-                kitchen gets tickets instantly while customers get their receipts. It's cut our billing time in half."
-              </blockquote>
-              <div class="flex items-center gap-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-lg">
-                  MO</div>
-                <div>
-                  <p class="font-body-bold text-body-bold text-on-surface">Multi-outlet Operator</p>
-                  <p class="text-body-sm text-on-surface-variant">Mumbai</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card min-w-full px-2">
-            <div class="glass-card p-8 md:p-10 rounded-3xl max-w-3xl mx-auto">
-              <div class="flex items-center gap-1 mb-6">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings:'FILL' 1">star</span>
-              </div>
-              <blockquote class="text-body-lg font-body-lg text-on-surface mb-8 leading-relaxed">
-                "The GST compliance features alone saved us from a major penalty. The FSSAI auto-lookup and automated
-                GST invoicing make tax season stress-free. Plus the WhatsApp invoice sharing is a hit with our
-                customers."
-              </blockquote>
-              <div class="flex items-center gap-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-lg">
-                  QO</div>
-                <div>
-                  <p class="font-body-bold text-body-bold text-on-surface">QSR Chain Owner</p>
-                  <p class="text-body-sm text-on-surface-variant">Bengaluru</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Carousel Controls -->
-        <div class="flex items-center justify-center gap-4 mt-10">
-          <button id="testimonial-prev"
-            class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all"
-            aria-label="Previous testimonial">
+        </div><!-- /testimonials-clip -->
+
+        <!-- Controls -->
+        <div class="testimonials-controls">
+          <button id="testimonial-prev" class="tcarousel-btn" aria-label="Previous testimonial">
             <span class="material-symbols-outlined">chevron_left</span>
           </button>
-          <div class="flex gap-2">
-            <button class="testimonial-dot w-2.5 h-2.5 rounded-full bg-primary transition-all"
-              aria-label="Go to testimonial 1"></button>
-            <button class="testimonial-dot w-2.5 h-2.5 rounded-full bg-outline-variant transition-all"
-              aria-label="Go to testimonial 2"></button>
-            <button class="testimonial-dot w-2.5 h-2.5 rounded-full bg-outline-variant transition-all"
-              aria-label="Go to testimonial 3"></button>
+          <div class="tcarousel-dots">
+            <button class="testimonial-dot active" aria-label="Go to testimonial 1" aria-current="true"></button>
+            <button class="testimonial-dot" aria-label="Go to testimonial 2" aria-current="false"></button>
+            <button class="testimonial-dot" aria-label="Go to testimonial 3" aria-current="false"></button>
           </div>
-          <button id="testimonial-next"
-            class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all"
-            aria-label="Next testimonial">
+          <button id="testimonial-next" class="tcarousel-btn" aria-label="Next testimonial">
             <span class="material-symbols-outlined">chevron_right</span>
           </button>
         </div>
@@ -445,7 +475,7 @@
           teams using KhanaBook to make billing, payments, and daily operations simpler.</p>
         <a href="get-started.html"
           class="inline-block bg-surface-dim text-primary px-10 py-5 rounded-2xl font-headline-md text-headline-md hover:scale-105 transition-all shadow-2xl">
-          Claim First Year Free
+          Start First Year Free
         </a>
       </div>
     </section>
@@ -453,16 +483,19 @@
     <!-- Demo Modal -->
     <div id="demo-modal"
       class="hidden fixed inset-0 z-[300] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
-      onclick="if(event.target===this)closeDemoModal()">
+      onclick="if(event.target===this)closeDemoModal()"
+      inert
+      aria-hidden="true">
       <div class="glass-card rounded-3xl p-6 max-w-3xl w-full relative">
         <button onclick="closeDemoModal()"
-          class="absolute top-4 right-4 w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center hover:border-primary transition-colors">
+          class="absolute top-4 right-4 w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center hover:border-primary transition-colors"
+          aria-label="Close demo modal">
           <span class="material-symbols-outlined text-on-surface-variant">close</span>
         </button>
         <div class="aspect-video bg-surface-container rounded-2xl flex items-center justify-center">
           <div class="text-center space-y-4">
             <span class="material-symbols-outlined text-primary text-[64px]"
-              style="font-variation-settings:'FILL' 1">play_circle</span>
+              style="font-variation-settings:'FILL' 1" aria-hidden="true">play_circle</span>
             <p class="text-body-md text-on-surface-variant">Demo video coming soon.</p>
           </div>
         </div>
@@ -581,25 +614,28 @@
   <!-- Lead Capture Modal -->
   <div id="lead-modal"
     class="hidden fixed inset-0 z-[250] flex items-end md:items-center justify-center bg-black/60 backdrop-blur-sm p-4"
-    onclick="if(event.target===this)closeLead()">
+    onclick="if(event.target===this)closeLead()"
+    inert
+    aria-hidden="true">
     <div class="glass-card rounded-3xl p-8 max-w-md w-full relative animate-fadeInUp">
       <button onclick="closeLead()"
-        class="absolute top-4 right-4 w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center hover:border-primary transition-colors">
+        class="absolute top-4 right-4 w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center hover:border-primary transition-colors"
+        aria-label="Close lead modal">
         <span class="material-symbols-outlined text-sm text-on-surface-variant">close</span>
       </button>
       <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
         <span class="material-symbols-outlined text-primary text-[28px]"
-          style="font-variation-settings:'FILL' 1">restaurant</span>
+          style="font-variation-settings:'FILL' 1" aria-hidden="true">restaurant</span>
       </div>
       <h3 class="text-headline-md font-headline-md text-on-surface mb-2">
-        Get Early Access
+        Start First Year Free
       </h3>
       <p class="text-body-sm text-on-surface-variant mb-6">
         Join the launch list — eligible restaurants get the first year free when onboarding opens in your city.
       </p>
-      <input type="tel" placeholder="+91 your WhatsApp number"
+      <input type="tel" id="lead-phone" placeholder="+91 your WhatsApp number"
         class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container text-on-surface text-body-sm focus:outline-none focus:border-primary transition-colors mb-3">
-      <button
+      <button id="lead-submit-btn"
         class="w-full bg-primary text-on-primary py-3 rounded-xl font-label-md text-label-md hover:brightness-105 transition-all violet-glow">
         Join Waitlist →
       </button>
