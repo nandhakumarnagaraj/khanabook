@@ -1,0 +1,985 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "id": "js_app_js",
+      "community": 0,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "routes",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L16",
+      "id": "js_app_routes",
+      "community": 0,
+      "norm_label": "routes"
+    },
+    {
+      "label": "routeMetadata",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L29",
+      "id": "js_app_routemetadata",
+      "community": 0,
+      "norm_label": "routemetadata"
+    },
+    {
+      "label": "globalState",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L72",
+      "id": "js_app_globalstate",
+      "community": 0,
+      "norm_label": "globalstate"
+    },
+    {
+      "label": "getInitialTheme()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L79",
+      "id": "js_app_getinitialtheme",
+      "community": 0,
+      "norm_label": "getinitialtheme()"
+    },
+    {
+      "label": "applyTheme()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L89",
+      "id": "js_app_applytheme",
+      "community": 11,
+      "norm_label": "applytheme()"
+    },
+    {
+      "label": "toggleTheme()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L109",
+      "id": "js_app_toggletheme",
+      "community": 11,
+      "norm_label": "toggletheme()"
+    },
+    {
+      "label": "setActiveNavLink()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L115",
+      "id": "js_app_setactivenavlink",
+      "community": 1,
+      "norm_label": "setactivenavlink()"
+    },
+    {
+      "label": "initCookieConsent()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L127",
+      "id": "js_app_initcookieconsent",
+      "community": 0,
+      "norm_label": "initcookieconsent()"
+    },
+    {
+      "label": "initMobileDrawer()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L149",
+      "id": "js_app_initmobiledrawer",
+      "community": 0,
+      "norm_label": "initmobiledrawer()"
+    },
+    {
+      "label": "initScrollToTop()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L215",
+      "id": "js_app_initscrolltotop",
+      "community": 0,
+      "norm_label": "initscrolltotop()"
+    },
+    {
+      "label": "setupExitIntent()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L237",
+      "id": "js_app_setupexitintent",
+      "community": 0,
+      "norm_label": "setupexitintent()"
+    },
+    {
+      "label": "initLeadModal()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L263",
+      "id": "js_app_initleadmodal",
+      "community": 0,
+      "norm_label": "initleadmodal()"
+    },
+    {
+      "label": "navigateTo()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L335",
+      "id": "js_app_navigateto",
+      "community": 1,
+      "norm_label": "navigateto()"
+    },
+    {
+      "label": "parseLocation()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L392",
+      "id": "js_app_parselocation",
+      "community": 1,
+      "norm_label": "parselocation()"
+    },
+    {
+      "label": "handleHashChange()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L406",
+      "id": "js_app_handlehashchange",
+      "community": 1,
+      "norm_label": "handlehashchange()"
+    },
+    {
+      "label": "initGlobalClickInterception()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L412",
+      "id": "js_app_initglobalclickinterception",
+      "community": 0,
+      "norm_label": "initglobalclickinterception()"
+    },
+    {
+      "label": "android-pos.js",
+      "file_type": "code",
+      "source_file": "js/pages/android-pos.js",
+      "source_location": "L1",
+      "id": "js_pages_android_pos_js",
+      "community": 7,
+      "norm_label": "android-pos.js"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/android-pos.js",
+      "source_location": "L261",
+      "id": "pages_android_pos_init",
+      "community": 7,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/android-pos.js",
+      "source_location": "L265",
+      "id": "pages_android_pos_destroy",
+      "community": 7,
+      "norm_label": "destroy()"
+    },
+    {
+      "label": "blog.js",
+      "file_type": "code",
+      "source_file": "js/pages/blog.js",
+      "source_location": "L1",
+      "id": "js_pages_blog_js",
+      "community": 4,
+      "norm_label": "blog.js"
+    },
+    {
+      "label": "blogCleanups",
+      "file_type": "code",
+      "source_file": "js/pages/blog.js",
+      "source_location": "L129",
+      "id": "pages_blog_blogcleanups",
+      "community": 4,
+      "norm_label": "blogcleanups"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/blog.js",
+      "source_location": "L131",
+      "id": "pages_blog_init",
+      "community": 4,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/blog.js",
+      "source_location": "L165",
+      "id": "pages_blog_destroy",
+      "community": 4,
+      "norm_label": "destroy()"
+    },
+    {
+      "label": "features.js",
+      "file_type": "code",
+      "source_file": "js/pages/features.js",
+      "source_location": "L1",
+      "id": "js_pages_features_js",
+      "community": 9,
+      "norm_label": "features.js"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/features.js",
+      "source_location": "L724",
+      "id": "pages_features_init",
+      "community": 9,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/features.js",
+      "source_location": "L728",
+      "id": "pages_features_destroy",
+      "community": 9,
+      "norm_label": "destroy()"
+    },
+    {
+      "label": "get-started.js",
+      "file_type": "code",
+      "source_file": "js/pages/get-started.js",
+      "source_location": "L1",
+      "id": "js_pages_get_started_js",
+      "community": 2,
+      "norm_label": "get-started.js"
+    },
+    {
+      "label": "getStartedCleanups",
+      "file_type": "code",
+      "source_file": "js/pages/get-started.js",
+      "source_location": "L137",
+      "id": "pages_get_started_getstartedcleanups",
+      "community": 2,
+      "norm_label": "getstartedcleanups"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/get-started.js",
+      "source_location": "L139",
+      "id": "pages_get_started_init",
+      "community": 2,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/get-started.js",
+      "source_location": "L223",
+      "id": "pages_get_started_destroy",
+      "community": 2,
+      "norm_label": "destroy()"
+    },
+    {
+      "label": "help-center.js",
+      "file_type": "code",
+      "source_file": "js/pages/help-center.js",
+      "source_location": "L1",
+      "id": "js_pages_help_center_js",
+      "community": 10,
+      "norm_label": "help-center.js"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/help-center.js",
+      "source_location": "L157",
+      "id": "pages_help_center_init",
+      "community": 10,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/help-center.js",
+      "source_location": "L161",
+      "id": "pages_help_center_destroy",
+      "community": 10,
+      "norm_label": "destroy()"
+    },
+    {
+      "label": "home.js",
+      "file_type": "code",
+      "source_file": "js/pages/home.js",
+      "source_location": "L1",
+      "id": "js_pages_home_js",
+      "community": 3,
+      "norm_label": "home.js"
+    },
+    {
+      "label": "homeCleanups",
+      "file_type": "code",
+      "source_file": "js/pages/home.js",
+      "source_location": "L333",
+      "id": "pages_home_homecleanups",
+      "community": 3,
+      "norm_label": "homecleanups"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/home.js",
+      "source_location": "L335",
+      "id": "pages_home_init",
+      "community": 3,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/home.js",
+      "source_location": "L515",
+      "id": "pages_home_destroy",
+      "community": 3,
+      "norm_label": "destroy()"
+    },
+    {
+      "label": "legal-privacy.js",
+      "file_type": "code",
+      "source_file": "js/pages/legal-privacy.js",
+      "source_location": "L1",
+      "id": "js_pages_legal_privacy_js",
+      "community": 5,
+      "norm_label": "legal-privacy.js"
+    },
+    {
+      "label": "legalCleanups",
+      "file_type": "code",
+      "source_file": "js/pages/legal-privacy.js",
+      "source_location": "L132",
+      "id": "pages_legal_privacy_legalcleanups",
+      "community": 5,
+      "norm_label": "legalcleanups"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/legal-privacy.js",
+      "source_location": "L134",
+      "id": "pages_legal_privacy_init",
+      "community": 5,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/legal-privacy.js",
+      "source_location": "L194",
+      "id": "pages_legal_privacy_destroy",
+      "community": 5,
+      "norm_label": "destroy()"
+    },
+    {
+      "label": "our-story.js",
+      "file_type": "code",
+      "source_file": "js/pages/our-story.js",
+      "source_location": "L1",
+      "id": "js_pages_our_story_js",
+      "community": 8,
+      "norm_label": "our-story.js"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/our-story.js",
+      "source_location": "L202",
+      "id": "pages_our_story_init",
+      "community": 8,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/our-story.js",
+      "source_location": "L206",
+      "id": "pages_our_story_destroy",
+      "community": 8,
+      "norm_label": "destroy()"
+    },
+    {
+      "label": "pricing-plans.js",
+      "file_type": "code",
+      "source_file": "js/pages/pricing-plans.js",
+      "source_location": "L1",
+      "id": "js_pages_pricing_plans_js",
+      "community": 6,
+      "norm_label": "pricing-plans.js"
+    },
+    {
+      "label": "pricingCleanups",
+      "file_type": "code",
+      "source_file": "js/pages/pricing-plans.js",
+      "source_location": "L360",
+      "id": "pages_pricing_plans_pricingcleanups",
+      "community": 6,
+      "norm_label": "pricingcleanups"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/pages/pricing-plans.js",
+      "source_location": "L362",
+      "id": "pages_pricing_plans_init",
+      "community": 6,
+      "norm_label": "init()"
+    },
+    {
+      "label": "destroy()",
+      "file_type": "code",
+      "source_file": "js/pages/pricing-plans.js",
+      "source_location": "L454",
+      "id": "pages_pricing_plans_destroy",
+      "community": 6,
+      "norm_label": "destroy()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_home_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_features_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_pricing_plans_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_android_pos_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_blog_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_get_started_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_help_center_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_our_story_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_pages_legal_privacy_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_routemetadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_globalstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_getinitialtheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_applytheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_toggletheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_setactivenavlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_initcookieconsent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_initmobiledrawer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_initscrolltotop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L237",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_setupexitintent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_initleadmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L335",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_navigateto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L392",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_parselocation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L406",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_handlehashchange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L412",
+      "weight": 1.0,
+      "source": "js_app_js",
+      "target": "js_app_initglobalclickinterception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "js_app_toggletheme",
+      "target": "js_app_applytheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L367",
+      "weight": 1.0,
+      "source": "js_app_navigateto",
+      "target": "js_app_setactivenavlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L408",
+      "weight": 1.0,
+      "source": "js_app_handlehashchange",
+      "target": "js_app_navigateto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L407",
+      "weight": 1.0,
+      "source": "js_app_handlehashchange",
+      "target": "js_app_parselocation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/android-pos.js",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "js_pages_android_pos_js",
+      "target": "pages_android_pos_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/android-pos.js",
+      "source_location": "L265",
+      "weight": 1.0,
+      "source": "js_pages_android_pos_js",
+      "target": "pages_android_pos_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/blog.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "js_pages_blog_js",
+      "target": "pages_blog_blogcleanups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/blog.js",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "js_pages_blog_js",
+      "target": "pages_blog_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/blog.js",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "js_pages_blog_js",
+      "target": "pages_blog_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/features.js",
+      "source_location": "L724",
+      "weight": 1.0,
+      "source": "js_pages_features_js",
+      "target": "pages_features_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/features.js",
+      "source_location": "L728",
+      "weight": 1.0,
+      "source": "js_pages_features_js",
+      "target": "pages_features_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/get-started.js",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "js_pages_get_started_js",
+      "target": "pages_get_started_getstartedcleanups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/get-started.js",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "js_pages_get_started_js",
+      "target": "pages_get_started_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/get-started.js",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "js_pages_get_started_js",
+      "target": "pages_get_started_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/help-center.js",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "js_pages_help_center_js",
+      "target": "pages_help_center_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/help-center.js",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "js_pages_help_center_js",
+      "target": "pages_help_center_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/home.js",
+      "source_location": "L333",
+      "weight": 1.0,
+      "source": "js_pages_home_js",
+      "target": "pages_home_homecleanups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/home.js",
+      "source_location": "L335",
+      "weight": 1.0,
+      "source": "js_pages_home_js",
+      "target": "pages_home_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/home.js",
+      "source_location": "L515",
+      "weight": 1.0,
+      "source": "js_pages_home_js",
+      "target": "pages_home_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/legal-privacy.js",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "js_pages_legal_privacy_js",
+      "target": "pages_legal_privacy_legalcleanups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/legal-privacy.js",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "js_pages_legal_privacy_js",
+      "target": "pages_legal_privacy_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/legal-privacy.js",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "js_pages_legal_privacy_js",
+      "target": "pages_legal_privacy_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/our-story.js",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "js_pages_our_story_js",
+      "target": "pages_our_story_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/our-story.js",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "js_pages_our_story_js",
+      "target": "pages_our_story_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/pricing-plans.js",
+      "source_location": "L360",
+      "weight": 1.0,
+      "source": "js_pages_pricing_plans_js",
+      "target": "pages_pricing_plans_pricingcleanups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/pricing-plans.js",
+      "source_location": "L362",
+      "weight": 1.0,
+      "source": "js_pages_pricing_plans_js",
+      "target": "pages_pricing_plans_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/pages/pricing-plans.js",
+      "source_location": "L454",
+      "weight": 1.0,
+      "source": "js_pages_pricing_plans_js",
+      "target": "pages_pricing_plans_destroy",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "3d6fd03d3a3b5143137563e70bcec87410b94202"
+}

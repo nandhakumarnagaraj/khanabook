@@ -1,0 +1,117 @@
+{
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\app.js": {
+    "mtime": 1780477767.0796857,
+    "ast_hash": "260839ad8bc0768a500c0093a2a31c20",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\android-pos.js": {
+    "mtime": 1780475296.5393815,
+    "ast_hash": "605ff73ced55bf21f43f63b1fe1d5ffe",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\blog.js": {
+    "mtime": 1780475302.4906957,
+    "ast_hash": "b5de852100c3a7d3059f8ade5c86f4dd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\features.js": {
+    "mtime": 1780475272.429912,
+    "ast_hash": "3f917867bc3041141977d32645a84b58",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\get-started.js": {
+    "mtime": 1780475310.4427197,
+    "ast_hash": "0e1baa2c0cda3dca80d6aab7dd462b5a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\help-center.js": {
+    "mtime": 1780475317.7704725,
+    "ast_hash": "9494bd6fe8c962cdf9a797106f525891",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\home.js": {
+    "mtime": 1780477763.555877,
+    "ast_hash": "d61d7bec7e134c9f1acf1e4f60932680",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\legal-privacy.js": {
+    "mtime": 1780475392.7835684,
+    "ast_hash": "3e9e5bc4cfaeb0f8ae24df21980d388a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\our-story.js": {
+    "mtime": 1780475387.2991686,
+    "ast_hash": "24f154be65b4d79712e50463d0c3694e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\js\\pages\\pricing-plans.js": {
+    "mtime": 1780475286.463808,
+    "ast_hash": "d41172f9511b9dd9f3ac6fb6a43af359",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\index.html": {
+    "mtime": 1780478463.8681388,
+    "ast_hash": "7e6f329ca9a7f9e23dabb20b991f3d73",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\chef_handshake.png": {
+    "mtime": 1780406927.6266549,
+    "ast_hash": "8d8dcbe4a235af33bba8ac780e222ab2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\khanabook_logo.png": {
+    "mtime": 1779903056.512144,
+    "ast_hash": "92842ec36f1e0daf5b9cc360b228e60e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\khanabook_logo_header.png": {
+    "mtime": 1779903259.4112566,
+    "ast_hash": "84a76c2b8625b785c8508643192a4325",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\owner_dashboard_mockup.png": {
+    "mtime": 1780408777.13595,
+    "ast_hash": "367d8530208c8202d18c65ce0de5913d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\pos_phone_billing_mockup.png": {
+    "mtime": 1780410124.4030876,
+    "ast_hash": "1839cd26d583c3f40b73f5eef10f4de9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\pos_phone_mockup.png": {
+    "mtime": 1780408061.0110345,
+    "ast_hash": "b8f7998b243fffb0b0f237d68004ae30",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\pos_terminal_industrial.png": {
+    "mtime": 1780406906.9030688,
+    "ast_hash": "0a0b6e1b815fc18d64a90ab98cab2aa4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\pricing_social_card.png": {
+    "mtime": 1780474322.7253523,
+    "ast_hash": "e459e3c74ea656d8dc979b80a02a890b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\server_room.png": {
+    "mtime": 1780406949.3713768,
+    "ast_hash": "3fe47090ce71c763ebec8d839ef4ac37",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\social_card.png": {
+    "mtime": 1780474206.1143126,
+    "ast_hash": "f8ea1dfc5d96b523cf4f95b63da27063",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\staff_terminal_mockup.png": {
+    "mtime": 1780408855.6875873,
+    "ast_hash": "5288c0d3e794063a3e9dcf639c2d81a6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\nandh\\Downloads\\khana-book-pos\\assets\\thermal_printer.png": {
+    "mtime": 1780406880.9618933,
+    "ast_hash": "3a8a75ea9478ff639555157825437377",
+    "semantic_hash": ""
+  }
+}
